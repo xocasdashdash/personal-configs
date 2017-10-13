@@ -1,6 +1,7 @@
 set nocompatible              " required
 filetype off                  " required
-
+set splitbelow 
+set splitright
 set nu
 " set the runtime path to include Vundle and initialize
 set rtp+=$HOME/.vim/bundle/Vundle.vim
@@ -13,7 +14,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-Plugin 'tmhedberg/SimpylFold'
+" Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
@@ -69,5 +70,9 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 map <C-n> :NERDTreeToggle<CR>
 
 set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+
+"Remaps
+"Kill buffer
+nnoremap <C-c> :bp\|bd #<CR> 
 
 let g:vim_markdown_folding_disabled = 1

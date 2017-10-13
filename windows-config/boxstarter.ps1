@@ -101,6 +101,8 @@ choco install WhatsApp -y
 choco install jbs -y
 choco install golang -y
 choco install rust -y
+choco install ack -y
+
 Write-Output "Packages installed!"
 
 
@@ -294,6 +296,10 @@ If (-Not (Test-Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Adv
     New-Item -Path HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People | Out-Null
 }
 Set-ItemProperty -Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Name PeopleBand -Type DWord -Value 0
+
+# Set long file names
+
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name LongPathsEnabled -Type DWord -Value 1
 
 #--- Restore Temporary Settings ---
 Enable-UAC
