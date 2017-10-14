@@ -87,9 +87,8 @@ choco install ngrok.portable -y
 choco install nodejs.install -y
 choco install pgadmin3 -y
 choco install php -y
-choco install python -y
-choco install python2 -y
-choco install python3 -y
+choco install python2 -y --params '"/InstallDir:C:\tools\python2"'
+choco install python3 -y --params '"/InstallDir:C:\tools\python23"'
 choco install SQLite -y
 choco install terraform -y
 choco install transmission -y
