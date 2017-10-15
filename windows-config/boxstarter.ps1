@@ -58,8 +58,8 @@ choco install Boxstarter.WinConfig -y -v
 choco install chocolatey -y -v
 choco install chocolatey-core.extension -y -v
 choco install chocolatey-uninstall.extension -y -v
-choco install chocolatey-visualstudio.extension -y -v
-choco install chocolatey-windowsupdate.extension -y -v
+#choco install chocolatey-visualstudio.extension -y -v
+#choco install chocolatey-windowsupdate.extension -y -v
 choco install cmake -y -v
 choco install cmake.install -y -v
 choco install comicrack -y -v
