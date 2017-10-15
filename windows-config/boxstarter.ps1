@@ -34,19 +34,20 @@ Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
 #--- Apps ---
 # Install a list of packages if present
 Write-Output "Installing packages..."
-choco install inconsolata -y -v
-choco install googlechrome
-choco install docker-for-windows
-choco install sharex
-choco install vcxsrv
+#One line to rule them all
+choco install inconsolata googlechrome docker-for-windows sharex vcxsrv poshgit sysinternals 7zip 7zip.install atom 
+#choco install inconsolata -y -v
+#choco install googlechrome -y
+#choco install docker-for-windows -y 
+#choco install sharex -y 
+#choco install vcxsrv -y 
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
-choco install poshgit
-choco install sysinternals -y -v
+#choco install poshgit -y 
+#choco install sysinternals -y -v
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
-choco install 7zip -y -v
-choco install 7zip.install -y -v
-choco install atom -y -v
+#choco install 7zip -y -v
+#choco install atom -y -v
 choco install cmake -y -v
 choco install cmake.install -y -v
 choco install comicrack -y -v
