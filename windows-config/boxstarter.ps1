@@ -38,7 +38,6 @@ choco install inconsolata -y -v
 choco install googlechrome
 choco install docker-for-windows
 choco install sharex
-# choco install microsoft-teams
 choco install vcxsrv
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
 choco install poshgit
@@ -48,6 +47,16 @@ choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
 choco install 7zip -y -v
 choco install 7zip.install -y -v
 choco install atom -y -v
+choco install cmake -y -v
+choco install cmake.install -y -v
+choco install comicrack -y -v
+choco install curl -y -v
+choco install docker -y -v
+choco install docker-compose -y -v
+choco install docker-for-windows -y -v
+choco install DotNet4.5.2 -y -v
+choco install DotNet3.5 -y -v
+#choco install microsoft-teams
 #choco install Boxstarter -y -v
 #choco install Boxstarter.Bootstrapper -y -v
 #choco install Boxstarter.Chocolatey -y -v
@@ -59,15 +68,6 @@ choco install atom -y -v
 #choco install chocolatey-uninstall.extension -y -v
 #choco install chocolatey-visualstudio.extension -y -v
 #choco install chocolatey-windowsupdate.extension -y -v
-choco install cmake -y -v
-choco install cmake.install -y -v
-choco install comicrack -y -v
-choco install curl -y -v
-choco install docker -y -v
-choco install docker-compose -y -v
-choco install docker-for-windows -y -v
-choco install DotNet3.5 -y -v
-choco install DotNet4.5.2 -y -v
 choco install DotNet4.6.1 -y -v
 choco install ext2explore -y -v
 choco install gnuwin32-coreutils.portable -y -v
