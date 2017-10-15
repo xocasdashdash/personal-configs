@@ -39,14 +39,7 @@ choco install chocolatey-core.extension chocolatey-uninstall.extension chocolate
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
-choco install cmake -y -v
-choco install cmake.install -y -v
-choco install comicrack -y -v
-choco install curl -y -v
-choco install docker -y -v
-choco install docker-compose -y -v
-choco install docker-for-windows -y -v
-Write-Output "19 packages installed..."
+choco install cmake docker-for-windows docker-compose docker curl comicrack -y -v
 #choco install microsoft-teams
 #choco install Boxstarter -y -v
 #choco install Boxstarter.Bootstrapper -y -v
@@ -55,7 +48,7 @@ Write-Output "19 packages installed..."
 #choco install Boxstarter.WinConfig -y -v
 #choco install Boxstarter.HyperV -y -v
 #choco install chocolatey -y -v
-choco install choco install gnuwin32-coreutils.portable mingw vim visualstudiocode WhatsApp jbs golang rust ack vcredist2015 vcredist140 php SQLite terraform transmission nbfc pgadmin3 ngrok.portable nodejs.install make ext2explore inconsolata jdk8 jq KB2919355 KB2919442 KB2999226 KB3033929 KB3035131-y -v
+choco install gnuwin32-coreutils.portable mingw vim visualstudiocode WhatsApp jbs golang rust ack vcredist2015 vcredist140 php SQLite terraform transmission nbfc pgadmin3 ngrok.portable nodejs.install make ext2explore inconsolata jdk8 jq KB2919355 KB2919442 KB2999226 KB3033929 KB3035131 -y -v
 choco install python2  -y -v --params '"/InstallDir:C:\tools\python2"'
 choco install python3 -y -v --params '"/InstallDir:C:\tools\python23"'
 
