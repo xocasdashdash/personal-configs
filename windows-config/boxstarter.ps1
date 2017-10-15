@@ -18,7 +18,7 @@
 Disable-UAC
 
 #--- Fonts ---
-choco install inconsolata -y
+choco install inconsolata -y -v
   
 #--- Windows Settings ---
 Disable-BingSearch
@@ -33,9 +33,9 @@ choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
 
 #--- Tools ---
-# choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
+# choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
 choco install poshgit
-choco install sysinternals -y
+choco install sysinternals -y -v
 # choco install vim
 
 #--- Apps ---
@@ -46,61 +46,61 @@ choco install sharex
 # choco install vcxsrv
 # Install a list of packages if present
 Write-Output "Installing packages..."
-choco install 7zip -y
-choco install 7zip.install -y
-choco install atom -y
-choco install Boxstarter -y
-choco install Boxstarter.Bootstrapper -y
-choco install Boxstarter.Chocolatey -y
-choco install Boxstarter.Common -y
-choco install Boxstarter.HyperV -y
-choco install Boxstarter.WinConfig -y
-choco install chocolatey -y
-choco install chocolatey-core.extension -y
-choco install chocolatey-uninstall.extension -y
-choco install chocolatey-visualstudio.extension -y
-choco install chocolatey-windowsupdate.extension -y
-choco install cmake -y
-choco install cmake.install -y
-choco install comicrack -y
-choco install curl -y
-choco install docker -y
-choco install docker-compose -y
-choco install docker-for-windows -y
-choco install DotNet3.5 -y
-choco install DotNet4.5.2 -y
-choco install DotNet4.6.1 -y
-choco install ext2explore -y
-choco install gnuwin32-coreutils.portable -y
-choco install inconsolata -y
-choco install jdk8 -y
-choco install jq -y
-choco install KB2919355 -y
-choco install KB2919442 -y
-choco install KB2999226 -y
-choco install KB3033929 -y
-choco install KB3035131 -y
-choco install make -y
-choco install mingw -y
-choco install nbfc -y
-choco install ngrok.portable -y
-choco install nodejs.install -y
-choco install pgadmin3 -y
-choco install php -y
-choco install python2 -y --params '"/InstallDir:C:\tools\python2"'
-choco install python3 -y --params '"/InstallDir:C:\tools\python23"'
-choco install SQLite -y
-choco install terraform -y
-choco install transmission -y
-choco install vcredist140 -y
-choco install vcredist2015 -y
-choco install vim -y
-choco install visualstudiocode -y
-choco install WhatsApp -y
-choco install jbs -y
-choco install golang -y
-choco install rust -y
-choco install ack -y
+choco install 7zip -y -v
+choco install 7zip.install -y -v
+choco install atom -y -v
+choco install Boxstarter -y -v
+choco install Boxstarter.Bootstrapper -y -v
+choco install Boxstarter.Chocolatey -y -v
+choco install Boxstarter.Common -y -v
+choco install Boxstarter.HyperV -y -v
+choco install Boxstarter.WinConfig -y -v
+choco install chocolatey -y -v
+choco install chocolatey-core.extension -y -v
+choco install chocolatey-uninstall.extension -y -v
+choco install chocolatey-visualstudio.extension -y -v
+choco install chocolatey-windowsupdate.extension -y -v
+choco install cmake -y -v
+choco install cmake.install -y -v
+choco install comicrack -y -v
+choco install curl -y -v
+choco install docker -y -v
+choco install docker-compose -y -v
+choco install docker-for-windows -y -v
+choco install DotNet3.5 -y -v
+choco install DotNet4.5.2 -y -v
+choco install DotNet4.6.1 -y -v
+choco install ext2explore -y -v
+choco install gnuwin32-coreutils.portable -y -v
+choco install inconsolata -y -v
+choco install jdk8 -y -v
+choco install jq -y -v
+choco install KB2919355 -y -v
+choco install KB2919442 -y -v
+choco install KB2999226 -y -v
+choco install KB3033929 -y -v
+choco install KB3035131 -y -v
+choco install make -y -v
+choco install mingw -y -v
+choco install nbfc -y -v
+choco install ngrok.portable -y -v
+choco install nodejs.install -y -v
+choco install pgadmin3 -y -v
+choco install php -y -v
+choco install python2 -y -v --params '"/InstallDir:C:\tools\python2"'
+choco install python3 -y -v --params '"/InstallDir:C:\tools\python23"'
+choco install SQLite -y -v
+choco install terraform -y -v
+choco install transmission -y -v
+choco install vcredist140 -y -v
+choco install vcredist2015 -y -v
+choco install vim -y -v
+choco install visualstudiocode -y -v
+choco install WhatsApp -y -v
+choco install jbs -y -v
+choco install golang -y -v
+choco install rust -y -v
+choco install ack -y -v
 
 Write-Output "Packages installed!"
 
