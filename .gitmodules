@@ -1,3 +1,6 @@
 [submodule "windows-config"]
 	path = windows-config
 	url = git@gist.github.com:2bb1d74adf954a21f343e3c681bf1aad.git
+[submodule "laplock"]
+	path = laplock
+	url = git@github.com:dechamps/laplock.git
