@@ -54,7 +54,8 @@ choco install curl -y -v
 choco install docker -y -v
 choco install docker-compose -y -v
 choco install docker-for-windows -y -v
-choco install DotNet4.5.2 -y -v
+Write-Output "19 packages installed..."
+choco install DotNet4.5.2 -y -v --force
 choco install DotNet3.5 -y -v
 #choco install microsoft-teams
 #choco install Boxstarter -y -v
