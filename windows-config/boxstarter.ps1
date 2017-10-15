@@ -45,16 +45,16 @@ choco install poshgit
 choco install sysinternals -y -v
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
-# choco install 7zip -y -v
-# choco install 7zip.install -y -v
-# choco install atom -y -v
-# choco install Boxstarter -y -v
-# choco install Boxstarter.Bootstrapper -y -v
-# choco install Boxstarter.Chocolatey -y -v
-# choco install Boxstarter.Common -y -v
-# choco install Boxstarter.HyperV -y -v
-# choco install Boxstarter.WinConfig -y -v
-# choco install chocolatey -y -v
+choco install 7zip -y -v
+choco install 7zip.install -y -v
+choco install atom -y -v
+choco install Boxstarter -y -v
+choco install Boxstarter.Bootstrapper -y -v
+choco install Boxstarter.Chocolatey -y -v
+choco install Boxstarter.Common -y -v
+choco install Boxstarter.HyperV -y -v
+choco install Boxstarter.WinConfig -y -v
+choco install chocolatey -y -v
 # choco install chocolatey-core.extension -y -v
 # choco install chocolatey-uninstall.extension -y -v
 # choco install chocolatey-visualstudio.extension -y -v
