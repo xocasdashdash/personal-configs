@@ -55,8 +55,6 @@ choco install docker -y -v
 choco install docker-compose -y -v
 choco install docker-for-windows -y -v
 Write-Output "19 packages installed..."
-choco install DotNet4.5.2 -y -v --force
-choco install DotNet3.5 -y -v
 #choco install microsoft-teams
 #choco install Boxstarter -y -v
 #choco install Boxstarter.Bootstrapper -y -v
@@ -69,7 +67,6 @@ choco install DotNet3.5 -y -v
 #choco install chocolatey-uninstall.extension -y -v
 #choco install chocolatey-visualstudio.extension -y -v
 #choco install chocolatey-windowsupdate.extension -y -v
-choco install DotNet4.6.1 -y -v
 choco install ext2explore -y -v
 choco install gnuwin32-coreutils.portable -y -v
 choco install inconsolata -y -v

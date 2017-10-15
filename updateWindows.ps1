@@ -4,4 +4,4 @@ $currPath=(Get-Item -Path ".\" -Verbose).FullName
 Write-Output "Path: ${currPath}"
 Add-StartMenuShortcut -Name "laplock" -Folder "Start-up" -Target "${currPath}\laplock\Debug\laplock.exe" -WorkingDirectory "${currPath}\laplock\Debug" -Icon "${currPath}\laplock\Debug\laplock.exe" -IconIndex 0 -Description "Lock Laptop" -Force
 Write-Output "Using gist: ${uriGist}"
-Install-BoxstarterPackage -PackageName $uriGist -DisableReboots
+Install-BoxstarterPackage -PackageName $uriGist -DisableReboots -Verbose
