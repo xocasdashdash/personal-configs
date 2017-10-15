@@ -35,19 +35,10 @@ Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
 # Install a list of packages if present
 Write-Output "Installing packages..."
 #One line to rule them all
-choco install inconsolata googlechrome docker-for-windows sharex vcxsrv poshgit sysinternals 7zip 7zip.install atom 
-#choco install inconsolata -y -v
-#choco install googlechrome -y
-#choco install docker-for-windows -y 
-#choco install sharex -y 
-#choco install vcxsrv -y 
+choco install chocolatey-core.extension chocolatey-uninstall.extension chocolatey-visualstudio.extension chocolatey-windowsupdate.extension inconsolata googlechrome docker-for-windows sharex vcxsrv poshgit sysinternals 7zip 7zip.install atom 
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
-#choco install poshgit -y 
-#choco install sysinternals -y -v
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
-#choco install 7zip -y -v
-#choco install atom -y -v
 choco install cmake -y -v
 choco install cmake.install -y -v
 choco install comicrack -y -v
@@ -64,41 +55,9 @@ Write-Output "19 packages installed..."
 #choco install Boxstarter.WinConfig -y -v
 #choco install Boxstarter.HyperV -y -v
 #choco install chocolatey -y -v
-#choco install chocolatey-core.extension -y -v
-#choco install chocolatey-uninstall.extension -y -v
-#choco install chocolatey-visualstudio.extension -y -v
-#choco install chocolatey-windowsupdate.extension -y -v
-choco install ext2explore -y -v
-choco install gnuwin32-coreutils.portable -y -v
-choco install inconsolata -y -v
-choco install jdk8 -y -v
-choco install jq -y -v
-choco install KB2919355 -y -v
-choco install KB2919442 -y -v
-choco install KB2999226 -y -v
-choco install KB3033929 -y -v
-choco install KB3035131 -y -v
-choco install make -y -v
-choco install mingw -y -v
-choco install nbfc -y -v
-choco install ngrok.portable -y -v
-choco install nodejs.install -y -v
-choco install pgadmin3 -y -v
-choco install php -y -v
-choco install python2 -y -v --params '"/InstallDir:C:\tools\python2"'
+choco install choco install gnuwin32-coreutils.portable mingw vim visualstudiocode WhatsApp jbs golang rust ack vcredist2015 vcredist140 php SQLite terraform transmission nbfc pgadmin3 ngrok.portable nodejs.install make ext2explore inconsolata jdk8 jq KB2919355 KB2919442 KB2999226 KB3033929 KB3035131-y -v
+choco install python2  -y -v --params '"/InstallDir:C:\tools\python2"'
 choco install python3 -y -v --params '"/InstallDir:C:\tools\python23"'
-choco install SQLite -y -v
-choco install terraform -y -v
-choco install transmission -y -v
-choco install vcredist140 -y -v
-choco install vcredist2015 -y -v
-choco install vim -y -v
-choco install visualstudiocode -y -v
-choco install WhatsApp -y -v
-choco install jbs -y -v
-choco install golang -y -v
-choco install rust -y -v
-choco install ack -y -v
 
 Write-Output "Packages installed!"
 
