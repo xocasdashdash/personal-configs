@@ -2,6 +2,6 @@ Set-Variable -Name uriGist -Value "https://gist.githubusercontent.com/xocasdashd
 Get-ChildItem "modules\*.ps1" | %{.$_} 
 $currPath=(Get-Item -Path ".\" -Verbose).FullName
 Write-Output "Path: ${currPath}"
-Add-StartMenuShortcut -Name "laplock" -Folder "Start-up" -Target "${currPath}\laplock\Debug\laplock.exe" -WorkingDirectory "${currPath}\laplock\Debug" -Icon "${currPath}\laplock\Debug\laplock.exe" -IconIndex 0 -Description "Lock Laptop" -Force
+Add-StartMenuShortcut -Name "laplock" -Folder "Startup" -Target "${currPath}\laplock\Debug\laplock.exe" -WorkingDirectory "${currPath}\laplock\Debug" -Icon "${currPath}\laplock\Debug\laplock.exe" -IconIndex 0 -Description "Lock Laptop" -Force
 Write-Output "Using gist: ${uriGist}"
 Install-BoxstarterPackage -PackageName $uriGist -DisableReboots -Verbose
