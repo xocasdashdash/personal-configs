@@ -35,7 +35,7 @@ Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
 # Install a list of packages if present
 Write-Output "Installing packages..."
 #One line to rule them all
-choco install chocolatey-core.extension chocolatey-uninstall.extension chocolatey-visualstudio.extension chocolatey-windowsupdate.extension inconsolata googlechrome docker-for-windows sharex vcxsrv poshgit sysinternals 7zip 7zip.install atom 
+choco install chocolatey-core.extension chocolatey-uninstall.extension chocolatey-visualstudio.extension chocolatey-windowsupdate.extension inconsolata googlechrome docker-for-windows sharex vcxsrv poshgit sysinternals 7zip 7zip.install atom ag  
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y -v
 choco install Microsoft-Hyper-V-All -source windowsFeatures
 choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
